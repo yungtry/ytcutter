@@ -1,5 +1,6 @@
-![Last release](https://img.shields.io/github/release-date/yungtry/ytcutter)
-![Last commit](https://img.shields.io/github/last-commit/yungtry/ytcutter)
+[![Last release](https://img.shields.io/github/release/yungtry/ytcutter)](https://github.com/yungtry/ytcutter/releases/latest)
+[![Last commit](https://img.shields.io/github/last-commit/yungtry/ytcutter)](https://github.com/yungtry/ytcutter/commits/main)
+[![License](https://img.shields.io/github/license/yungtry/ytcutter)](https://github.com/yungtry/ytcutter/blob/main/LICENSE)
 
 
 # YTCutter 🎬
