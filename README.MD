@@ -1,10 +1,14 @@
-# YTCutter
+![Last release](https://img.shields.io/github/release-date/yungtry/ytcutter)
+![Last commit](https://img.shields.io/github/last-commit/yungtry/ytcutter)
+
+
+# YTCutter 🎬
 
 <img src="https://github.com/yungtry/ytcutter/blob/main/assets/logo.png?raw=true" width="100" height="100" alt="YTCutter Logo">
 
 A modern, cross-platform desktop application for cutting and downloading segments from YouTube videos. Built with Avalonia UI and .NET.
 
-## Features
+## Features 🚀
 
 - 🎯 Cut specific segments from YouTube videos
 - ⚡ Fast video processing using FFmpeg
@@ -15,13 +19,13 @@ A modern, cross-platform desktop application for cutting and downloading segment
 
 ![Screenshot](images/screenshot.png "YTCutter Screenshot")
 
-## Installation
+## Installation 📥
 
 1. Head over to the [releases](https://github.com/yungtry/ytcutter/releases) page and download the latest version of YTCutter.
 2. Extract the archive to a directory of your choice.
 3. Open the directory and run the `ytcutter.exe` file.
 
-## Requirements
+## Requirements 🔧
 
 - FFmpeg (automatically included in Windows builds, needs to be installed on other platforms)
 
@@ -35,7 +39,7 @@ For macOS users, you can install FFmpeg using Homebrew:
 brew install ffmpeg
 ```
 
-## Usage
+## Usage 📝
 
 1. Enter a YouTube URL in the input field
 2. Specify the start time (in seconds or MM:SS format)
@@ -44,7 +48,7 @@ brew install ffmpeg
 5. Wait for the download and processing to complete
 6. Find your cut video in the output directory
 
-## Build Instructions
+## Build Instructions 🛠️
 
 1. Clone the repository: `git clone https://github.com/yungtry/ytcutter.git`
 2. Navigate to the project directory: `cd ytcutter`
@@ -57,7 +61,7 @@ Built using:
 - Avalonia UI for cross-platform desktop interface
 - YoutubeExplode for YouTube video processing
 - FFmpeg for video cutting and encoding
-- .NET 6.0
+- .NET 8.0
 
 ## License
 
