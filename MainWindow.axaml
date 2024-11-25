@@ -1,0 +1,80 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="650"
+        x:Class="ytcutter.MainWindow"
+        Title="ytcutter"
+		Width="400"
+		Height="650"
+		MaxHeight="800"
+		MaxWidth="800"
+		CanResize="False"
+		Icon="/assets/ytcutterico.png"
+		TransparencyLevelHint="Mica">
+	<Window.Styles>
+		<StyleInclude Source="avares://AvaloniaProgressRing/Styles/ProgressRing.xaml"/>
+		<Style Selector="Image.Logo">
+			<Style.Animations>
+				<Animation Duration="0:0:1">
+					<KeyFrame Cue="0%">
+						<Setter Property="Opacity" Value="0.0"/>
+						<Setter Property="Height" Value="100" />
+					</KeyFrame>
+					<KeyFrame Cue="100%">
+						<Setter Property="Opacity" Value="1.0"/>
+						<Setter Property="Height" Value="200" />
+					</KeyFrame>
+				</Animation>
+			</Style.Animations>
+		</Style>
+	</Window.Styles>
+	<StackPanel Margin="20">
+		<Panel Height="200">
+			<Image Classes="Logo" Source="/assets/logo.png" Height="200"/>
+		</Panel>
+		<TextBlock Margin="0 5" >Youtube URL:</TextBlock>
+		<TextBox Watermark="URL" Name="youtubeUrl" />
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<StackPanel HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0">
+				<TextBlock Margin="0 15 0 5">Start
+					<Image Source="/assets/tooltip.png" ToolTip.Tip="Either in MM:SS format or a number of seconds" Height="15"/>
+				</TextBlock>
+					
+				<TextBox Name="startInput" TextChanged="TimeInput_TextChanged" ToolTip.Tip="Either in MM:SS format or a number of seconds" />
+			</StackPanel>
+			<StackPanel  HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0">
+				<TextBlock Margin="0 15 0 5">Finish
+					<Image Source="/assets/tooltip.png" ToolTip.Tip="Either in MM:SS format or a number of seconds" Height="15"/>
+				</TextBlock>
+				
+				<TextBox Name="finishInput" TextChanged="TimeInput_TextChanged" ToolTip.Tip="Either in MM:SS format or a number of seconds" />
+			</StackPanel>
+		</Grid>
+		<Button x:Name="cutButton" Click="cutButton_OnClick" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Bottom">Cut!</Button>
+		<ProgressBar Name="progressBar" ShowProgressText="True" Minimum="0" Maximum="100" />
+		<Panel Margin="0, 10, 0, 0">
+			<Rectangle Fill="LightGray"/>
+			<TextBlock HorizontalAlignment="Center" Name="videoTitle">Preview not available</TextBlock>
+		</Panel>
+		<Panel>
+			<Rectangle Fill="LightGray"/>
+			<Image Height="100" Width="100" Source="/assets/No_Preview_image_2.png" Margin="10" Name="videoThumbnail"></Image>
+		</Panel>
+		<Panel>
+			<TextBlock Name="statusText" TextWrapping="Wrap">Status: Waiting for video...</TextBlock>
+			<progRing:ProgressRing Width="20"
+					   Height="20"
+					   IsActive="False"
+					   HorizontalAlignment="Right"
+					   Foreground="Blue"
+					   Name="progressRing"
+					   />
+		</Panel>
+	</StackPanel>
+</Window>
