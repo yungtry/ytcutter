@@ -55,6 +55,7 @@ brew install ffmpeg
 2. Navigate to the project directory: `cd ytcutter`
 3. Run the build script: `dotnet build`
 4. Run the application: `dotnet run`
+5. Publish the application: `dotnet publish`
 
 ## Technical Details
 
