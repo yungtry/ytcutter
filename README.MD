@@ -15,9 +15,14 @@ A modern, cross-platform desktop application for cutting and downloading segment
 
 ![Screenshot](images/screenshot.png "YTCutter Screenshot")
 
+## Installation
+
+1. Head over to the [releases](https://github.com/yungtry/ytcutter/releases) page and download the latest version of YTCutter.
+2. Extract the archive to a directory of your choice.
+3. Open the directory and run the `ytcutter.exe` file.
+
 ## Requirements
 
-- .NET 6.0 or later
 - FFmpeg (automatically included in Windows builds, needs to be installed on other platforms)
 
 ## Usage
