@@ -25,6 +25,16 @@ A modern, cross-platform desktop application for cutting and downloading segment
 
 - FFmpeg (automatically included in Windows builds, needs to be installed on other platforms)
 
+For linux users, you can install FFmpeg using your package manager:
+```sh
+sudo apt-get install ffmpeg
+```
+
+For macOS users, you can install FFmpeg using Homebrew:
+```sh
+brew install ffmpeg
+```
+
 ## Usage
 
 1. Enter a YouTube URL in the input field
