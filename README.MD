@@ -1,6 +1,6 @@
 # YTCutter
 
-<img src="https://github.com/yungtry/ytcutter/blob/main/images/screenshot.png?raw=true" width="100" height="100" alt="YTCutter Logo">
+<img src="https://github.com/yungtry/ytcutter/blob/main/assets/logo.png?raw=true" width="100" height="100" alt="YTCutter Logo">
 
 A modern, cross-platform desktop application for cutting and downloading segments from YouTube videos. Built with Avalonia UI and .NET.
 
